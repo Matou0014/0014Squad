@@ -1,0 +1,183 @@
+/*******************************
+
+Document | HTML @ 10
+
+*******************************/
+body {
+    background-color: black;
+    padding-top : 26px;
+    padding-bottom: 60px;
+    margin-left: 241.500px;
+    margin-right: 241.500px; 
+}
+@media only screen and (max-device-width: 1366px) {
+    .body{
+       margin-left: 20px;
+    }
+}
+h1, h2, h3, h4, h5, p {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 25px;
+    color: white
+}
+
+/*******************************
+
+Information | HTML @ 25
+
+*******************************/
+.end h1 {
+    display: block;
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+.end > .text {
+    display: block;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: -15px;
+}
+.end img {
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*******************************
+
+Slideshow | HTML @ 36
+--------------------------------
+Source: https://l.0014squad.xyz/SqrS8
+
+*******************************/
+*,
+*::before,
+*::after { box-sizing: border-box; }
+.card {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.card_part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translateX( 700px );
+    background-image: url("/media/slideshow/blockade_1.png");
+    background-position: center;
+	background-size: cover;
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+.card_part.card_part-two {
+    z-index: 6;
+    background-image: url("/media/slideshow/blockade_2.jpg");
+    background-position: center;
+	background-size: cover;
+    animation-delay: 7s;
+}
+.card_part.card_part-three {
+    z-index: 5;
+    background-image: url("/media/slideshow/blockade_3.jpg");
+    background-position: center;
+	background-size: cover;
+    animation-delay: 14s;
+}
+.card_part.card_part-four {
+    z-index: 4;
+    background-image: url("/media/slideshow/discord.png");
+    background-position: center;
+	background-size: cover;
+    animation-delay: 21s;
+}
+@keyframes opaqTransition {
+    3% { transform: translateX( 0 ); }
+    25% { transform: translateX( 0 ); }
+    28% { transform: translateX( -700px ); }
+    100% { transform: translateX( -700px ); }
+}
+
+/*******************************
+
+Staff | HTML @ 48
+
+*******************************/
+.thanks h1 {
+    display: block;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+}
+.thanks > .text {
+    display: block;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: -15px;
+}
+.parallax > .mask {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+}
+.parallax > .text {
+    display: block;    
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-transform: uppercase;
+    margin-left: 200px;
+    font-size: 35px;
+    font-weight: lighter;
+    color: white;
+    list-style-type: circle;
+    line-height: 1.5;
+}
+.parallax {
+    border-radius: 8px;
+    position: relative;
+	height: 300%;
+	size: 1200vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url("media/end.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+	.parallax {
+	  background-attachment: scroll;
+   }
+}
+
+/*******************************
+
+Footer | HTML @ 110
+
+*******************************/
+.footer {
+    margin-top: 100px;
+    display: block;
+    align-content: center;
+    padding-left: 5px;
+}
