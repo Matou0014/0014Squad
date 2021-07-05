@@ -82,7 +82,7 @@ Source: https://codepen.io/flatpixels/pen/qQParK
     width: 100%;
     height: 100%;
     transform: translateX( 700px );
-    background-image: url("media/slideshow/blockade_1.png");
+    background-image: url("../slideshow/blockade_1.png");
     background-position: center;
 	background-size: cover;
     animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
